@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+}
+
+
+
+.container {
+  height: 100px;
+  width: 100%;
+  background-color: black;
+}
+
+.box {
+  height: calc(100% - 100px);
+  color: red;
+
+}
+
+ul{
+  list-style-position: inside;
+  padding: 10px;
+}
