@@ -4,22 +4,113 @@
   box-sizing: border-box;
   font-family: 'Lato', sans-serif;
 }
+body {
+  background-color: grey;
 
+}
 
-
+/* |||||||||||||||| HEADER |||||||||||| */
 .container {
   height: 100px;
-  width: 100%;
+  width: 100vw;
   background-color: black;
+  display: flex;
 }
-
+.box_header_sx {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  width: 50%;
+  padding-left: 30px;
+}
+.logo_netflix {
+  height: 100px;
+  width: 200px;
+}
+.box_header_dx {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 50%;
+  padding-right: 30px;
+}
+.inp {
+  width: 160px;
+  height: 30px;
+  color: black;
+  font-weight: bold;
+  padding: 5px;
+}
+/* |||||||||||||||| SEZIONE PAGINA ||||||||| */
 .box {
-  height: calc(100% - 100px);
-  color: red;
-
+  height:100%;
+  width: 90%;
+  color: black;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
 }
 
-ul{
+.film {
+  margin: 0 auto;
+  height: 600px;
+  width: calc(100% / 3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fronte {
+  height: 600px;
+  width: 100%;
+  /* border: solid white 1px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.poster {
+  position: relative;
+  display: block;
+}
+
+.film:hover .retro {
+  display: block;
+}
+
+.film:hover .fronte {
+  display: none;
+}
+
+.retro {
+  display: none;
+  height: 513px;
+  width: 85%;
+  /* background-color: rgba(233,233,233,.6); */
+  /* border: solid red 1px; */
+  background-image: url(img/net_blk.jpg);
+}
+
+
+ul {
+  line-height: 30px;
   list-style-position: inside;
   padding: 10px;
+  display: block;
+  list-style-type: none;
+}
+li {
+  color: white;
+  text-align: center;
+  font-size: 15px;
+  /* padding: 5px; */
+  font-weight: 200;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flag {
+  width: 20px;
+  height: 20px;
 }
